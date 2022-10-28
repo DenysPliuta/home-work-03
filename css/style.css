@@ -18,7 +18,7 @@ body {
 
 
 h1,h2,h3,h4,h5,h6,p {
-    margin: 0;
+    margin: 0px;
 }
 
 
@@ -34,14 +34,11 @@ img {
 
 .container {
     width: 1200px;
-    outline: solid tomato;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-
-/* Главная страница */
 
 .visually-hidden {
     position: absolute;
@@ -56,6 +53,13 @@ img {
     margin: -1px;
 }
 
+/* Главная страница */
+
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
 
 .link {
     text-decoration: none;
@@ -72,6 +76,28 @@ img {
         text-decoration: none;
         color: #000000;
         
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav.list {
+    display: flex;
+    margin-left: 93px;
+    gap: 50px;
+}
+
+.nav-link {
+    display: block;
+    padding: 32px 0px;
+}
+
+.header-contact {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
 }
 
 .logo-accent {
@@ -106,6 +132,10 @@ img {
 .link.contact-header:focus {
     color: var(--color-accent);
 }
+
+
+
+/*--------Hero--------*/
 
 .hero {
     text-align: center;
@@ -150,6 +180,15 @@ img {
 }
 
 
+/*-------Advantage----------*/
+
+
+
+.list.advantage {
+    display: flex;
+    padding: 94px 0px;
+    gap: 30px;
+}
 
 .advantage-title {
         font-weight: 700;
@@ -170,6 +209,7 @@ img {
     color: var(--text-color-secondary);
 }
 
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -181,6 +221,31 @@ img {
     color: var(--text-color-main);
 }
 
+.work-list {
+    display: flex;
+}
+
+.work-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.work-container {
+    margin-bottom: 94px;
+}
+
+
+/*--------Team--------*/
+
+.team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
 .team-title {
         font-weight: 500;
         font-size: 16px;
@@ -188,6 +253,7 @@ img {
         text-align: center;
         letter-spacing: 0.03em;
         margin-bottom: 10px;
+        margin-top: 30px;
     
         color: var(--text-color-main);
 }
@@ -201,11 +267,19 @@ img {
         color: var(--text-color-secondary);
 }
 
+.pre-team {
+    padding-bottom: 30px;
+}
+
 .team {
-    background-color: #F5F4FA;;
+    background-color: #F5F4FA;
+    
 }
 
 .team-card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
 }
 
@@ -222,6 +296,8 @@ img {
 }
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-hero-footer);
 }
 

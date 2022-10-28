@@ -18,28 +18,30 @@
 <body>
     <header>
         <div class="container">
-            <nav>
-              <a href="/" class="logo-header"><span class="logo-accent">Web</span>Studio</a>
-              <ul class="list">
-                <li>
-                    <a href="" class="link nav current">Студія</a>
-                </li>
-                <li>
-                    <a href="./portfolio.html" class="link nav">Портфоліо</a>
-                </li>
-                <li>
-                    <a href="" class="link nav">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-                <ul class="list">
-                    <li>
-                        <a href="mailto:info@devstudio.com" class="link contact-header">info@devstudio.com</a>
+            <div class="nav-container">
+                <nav class="nav-header">
+                  <a href="/" class="logo-header"><span class="logo-accent">Web</span>Studio</a>
+                  <ul class="site-nav list">
+                    <li class="nav-link">
+                        <a href="" class="link nav current">Студія</a>
                     </li>
-                    <li>
-                        <a href="tel:+380961111111" class="link contact-header">+38 096 111 11 11</a>
+                    <li class="nav-link">
+                        <a href="./portfolio.html" class="link nav">Портфоліо</a>
                     </li>
-                </ul>
+                    <li class="nav-link">
+                        <a href="" class="link nav">Контакти</a>
+                    </li>
+                  </ul>
+                </nav>
+                    <ul class="header-contact list">
+                        <li class="nav-link">
+                            <a href="mailto:info@devstudio.com" class="link contact-header">info@devstudio.com</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="tel:+380961111111" class="link contact-header">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -56,8 +58,8 @@
             </div>
         </section>
         <section class="advantage">
-            <div class="container">
-                <h2 class="visually-hidden">Наші Переваги</h2>
+            <h2 class="visually-hidden">Наші Переваги</h2>
+            <div class="adv-container container">
                 <ul class="list advantage">
                     <li>
                         <h3 class="advantage-title">Увага до деталей</h3>
@@ -79,38 +81,46 @@
             </div>
         </section>
         <section>
-            <div class="container">
+            <div class="work-container container">
                 <h2 class="section-title">Чим ми займаємося</h2>
-                <ul class="list">
-                    <li><img src="./images/img-1.jpg" alt="Фото робіт" width="370" height="294"></li>
-                    <li><img src="./images/img-2.jpg" alt="Фото робіт" width="370" height="294"></li>
-                    <li><img src="./images/img-3.jpg" alt="Фото робіт" width="370" height="294"></li>
+                <ul class="work-list list">
+                    <li class="item"><img src="./images/img-1.jpg" alt="Фото робіт" width="370" height="294"></li>
+                    <li class="item"><img src="./images/img-2.jpg" alt="Фото робіт" width="370" height="294"></li>
+                    <li class="item"><img src="./images/img-3.jpg" alt="Фото робіт" width="370" height="294"></li>
                 </ul>
             </div>
         </section>
         <section class="team">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
-                <ul class="list">
+                <ul class="team-list list">
                     <li class="team-card">
                         <img src="./images/img-person-01.jpg" alt="Фото робітника" width="270" height="260">
-                        <h3 class="team-title">Ігор Дем'яненко</h3>
-                        <p lang="en" class="team-text">Product Designer</p>
+                        <div class="pre-team">
+                            <h3 class="team-title">Ігор Дем'яненко</h3>
+                            <p lang="en" class="team-text">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-card">
                         <img src="./images/img-person-02.jpg" alt="Фото робітника" width="270" height="260">
-                        <h3 class="team-title">Ольга Рєпіна</h3>
-                        <p lang="en" class="team-text">Frontend Developer</p>
+                        <div class="pre-team">
+                            <h3 class="team-title">Ольга Рєпіна</h3>
+                            <p lang="en" class="team-text">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-card">
                         <img src="./images/img-person-03.jpg" alt="Фото робітника" width="270" height="260">
-                        <h3 class="team-title">Микола Тарасов</h3>
-                        <p lang="en" class="team-text">Marketing</p>
+                        <div class="pre-team">
+                            <h3 class="team-title">Микола Тарасов</h3>
+                            <p lang="en" class="team-text">Marketing</p>
+                        </div>
                     </li>
                     <li class="team-card">
                         <img src="./images/img-person-04.jpg" alt="Фото робітника" width="270" height="260">
-                        <h3 class="team-title">Михайло Єрмаков</h3>
-                        <p lang="en" class="team-text">UI Designer</p>
+                        <div class="pre-team">
+                            <h3 class="team-title">Михайло Єрмаков</h3>
+                            <p lang="en" class="team-text">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
