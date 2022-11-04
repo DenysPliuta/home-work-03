@@ -135,6 +135,7 @@ img {
 }
 
 .link.contact-header {
+        display: flex;
         font-weight: 500;
         line-height: calc(16/14);
         letter-spacing: 0.02em;
@@ -145,6 +146,11 @@ img {
 .link.contact-header:hover,
 .link.contact-header:focus {
     color: var(--color-accent);
+}
+
+
+.icon-mail {
+    content: "";    
 }
 
 
