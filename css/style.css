@@ -136,11 +136,21 @@ img {
 
 .link.contact-header {
         display: flex;
+        align-items: center;
+        gap: 10px;
         font-weight: 500;
         line-height: calc(16/14);
         letter-spacing: 0.02em;
     
         color: var(--text-color-secondary)
+}
+
+.header-mail {
+    fill: currentColor;
+}
+
+.header-phone {
+    fill: currentColor;
 }
 
 .link.contact-header:hover,
@@ -149,16 +159,16 @@ img {
 }
 
 
-.icon-mail {
-    content: "";    
-}
-
-
 
 /*--------Hero--------*/
 
 .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
     text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
     background-color: var(--background-hero-footer)
 }
 
@@ -209,6 +219,25 @@ img {
     padding: 94px 0px;
     gap: 30px;
 }
+
+.advantage-icon {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    background-color: var(--btn-filter-color);
+    
+
+}
+
+.feature-icon {
+    margin: auto;
+}
+
+
+
 
 .advantage-title {
         font-weight: 700;
@@ -302,6 +331,22 @@ img {
     border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
 }
+
+
+.clients-container {
+
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(42/36);
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        padding-top: 94px;
+        padding-bottom: 94px;
+    
+        color: var(--text-color-main);
+}
+
 
 .logo-footer {
     display: inline-block;
